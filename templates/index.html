@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Webscrapper by Akhil</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+
+<body>
+    <div class="main">
+        <h1 id="mainh1">Webscrapper by Akhil</h1>
+        <form action="/process" method="POST">
+            <div>
+                <h2>Website you want to scrap data from :</h2>
+                <div>
+                    <input type="radio" id="flipkart" name="sitename" value="flipkart" required>
+                    <label for="flipkart">Flipkart</label>&nbsp;&nbsp;
+                    <input type="radio" id="amazon" name="sitename" value="amazon">
+                    <label for="amazon">Amazon</label>
+                </div>
+            </div>
+            <div class="submitdiv">
+                <input type="text" name="content" id="content">
+                <input type="submit" id="search" value="Search &#128270;">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
+
+
+
+<!-- 
+color palette:
+    red #f44336
+    blue #2196f3
+    yellow #ffc107
+    green #4caf50 
+web add
+https://www.flipkart.com/search?q=
+https://www.amazon.in/s?k=
+-->

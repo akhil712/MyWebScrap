@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Review Result {{reviews[0]['Product']}}</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+
+<body>
+
+  <div class="main">
+    <h1>Reviews</h1>
+
+    <table cellspacing="2px">
+      <tr>
+        <th width="10%">Product</th>
+        <th width="10%">Name</th>
+        <th width="10%">Rating</th>
+        <th width="10%">Comment Heading</th>
+        <th width="40%">Comments</th>
+      </tr>
+      {% for review in reviews %}
+      <tr>
+        <td>{{review['Product']}}</td>
+        <td>{{review['Name']}}</td>
+        <td>{{review['Rating']}}</td>
+        <td>{{review['Heading']}}</td>
+        <td>{{review['Comment']}} </td>
+        {% endfor %}
+    </table>
+  </div>
+
+
+
+
+</body>
+
+</html>
